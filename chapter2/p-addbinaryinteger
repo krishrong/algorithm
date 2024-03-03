@@ -1,0 +1,9 @@
+//2.1-5 pesudocode # take input arrays a[n-1], b[n-1] which store binary data of n bits, return c[n] which is sum of a,b
+carry=0
+for i=0 to n-1 do
+    carry=a[i]+b[i]+c[i]
+    if(carry>1)
+        c[i]=carry%2
+        c[i+1]+=1
+    else
+        c[i]=carry
